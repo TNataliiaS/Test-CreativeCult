@@ -1,0 +1,36 @@
+.site-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 54px;
+
+    &__link {
+        padding-bottom: 7px;
+        padding-top: 7px;
+
+        font-size: 15px;
+
+        &--subnav {
+            padding-right: 15px;
+
+            position: relative;
+
+            &:after {
+                content: '';
+                display: block;
+                width: 8px;
+                height: 4px;
+                margin-top: 1px;
+
+                background-image: url('../images/arrow-icon.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+
+                position: absolute;
+                top: 50%;
+                right: 0;
+                z-index: 1;
+            }
+        }
+    }
+}

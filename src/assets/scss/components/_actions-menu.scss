@@ -1,0 +1,55 @@
+.actions-menu {
+    display: flex;
+    align-items: center;
+
+    &__list {
+        display: flex;
+    }
+
+    &__link {
+        margin-right: 32px;
+
+        font-size: 14px;
+        line-height: 1.58;
+        color: #003154;
+
+        &--feedback {
+            padding-left: 23px;
+            position: relative;
+
+            &:before {
+                content: '';
+                display: block;
+                width: 17px;
+                height: 20px;
+                margin-top: -1px;
+
+                background-image: url('../images/letter-icon.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+
+    &__search {
+        padding: 0;
+
+        border: 0;
+        background: none;
+
+        &:before {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+
+            background-image: url('../images/search-icon.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+}
