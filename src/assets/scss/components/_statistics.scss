@@ -1,7 +1,4 @@
 .statistics {
-    padding-top: 80px;
-    padding-bottom: 80px;
-
     color: $primary-color;
 
     background-color: $content-color-accent;
@@ -109,5 +106,6 @@
 
     &__description-details {
         margin: 0;
+        line-height: 1.48;
     }
 }

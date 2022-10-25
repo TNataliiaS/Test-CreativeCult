@@ -1,6 +1,4 @@
 .main-menu {
-    padding-top: 80px;
-    padding-bottom: 80px;
     display: flex;
 
     &__header {
@@ -8,12 +6,7 @@
     }
 
     &__title {
-        margin-bottom: 24px;
-
-        font-size: 29px;
-        line-height: 1.16;
-        font-weight: 600;
-        color: $content-color-accent;
+        margin-bottom: 22px;
     }
 
     &__nav {

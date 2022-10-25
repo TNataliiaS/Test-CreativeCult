@@ -23,28 +23,15 @@
     }
 
     &__title {
-        margin-bottom: 8px;
-
-        font-size: 13px;
-        font-weight: 600;
-        line-height: 1.4;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        color: #888888;
+        margin-bottom: 9px;
     }
 
     &__subtitle {
         margin-bottom: 16px;
-
-        font-weight: 600;
-        font-size: 29px;
-        line-height: 1.16;
-        color: $content-color-accent;
     }
 
     &__description {
-        margin-bottom: 32px;
-        line-height: 1.74;
+        margin-bottom: 28px;
 
         > sup {
             font-size: 58%;

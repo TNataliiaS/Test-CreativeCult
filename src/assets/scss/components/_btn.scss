@@ -12,15 +12,30 @@
 
     background-color: transparent;
     border: 0;
-    border-radius: 2px;
     cursor: pointer;
 
     &--standard {
-        padding: 11px 58px;
-
-        color: $content-color-accent;
+        padding-top: 11px;
+        padding-bottom: 11px;
 
         border: 1px solid $content-color-accent;
+        border-radius: 2px;
+    }
+
+    &--primary {
+        padding-left: 58px;
+        padding-right: 58px;
+
+        color: $content-color-accent;
+    }
+
+    &--second {
+        padding-left: 31px;
+        padding-right: 31px;
+
+        color: $primary-color;
+
+        background-color: $content-color-accent;
     }
 
     &--link {
