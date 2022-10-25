@@ -30,7 +30,7 @@
 
             background-image: url('../images/arrow-icon.svg');
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: cover;
 
             position: absolute;
             top: 7px;
@@ -43,6 +43,7 @@
 
     &__nav {
         display: flex;
+        margin-bottom: 1px;
     }
 
     &__list {
