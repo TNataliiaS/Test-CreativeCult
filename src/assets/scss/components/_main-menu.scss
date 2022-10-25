@@ -16,31 +16,6 @@
         color: $content-color-accent;
     }
 
-    &__link-catalog {
-        padding-right: 15px;
-
-        color: $content-color-second;
-
-        position: relative;
-
-        &:after {
-            content: '';
-            width: 10px;
-            height: 6px;
-
-            background-image: url('../images/arrow-icon.svg');
-            background-repeat: no-repeat;
-            background-size: cover;
-
-            position: absolute;
-            top: 7px;
-            right: 0;
-            z-index: 1;
-
-            transform: rotate(-90deg);
-        }
-    }
-
     &__nav {
         display: flex;
         margin-bottom: 1px;
