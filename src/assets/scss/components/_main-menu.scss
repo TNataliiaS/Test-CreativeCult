@@ -1,0 +1,36 @@
+.main-menu {
+    display: flex;
+
+    &__header {
+        margin-right: 118px;
+    }
+
+    &__title {
+        margin-bottom: 22px;
+    }
+
+    &__nav {
+        display: flex;
+        margin-bottom: 1px;
+    }
+
+    &__list {
+        width: 200px;
+        margin-right: 40px;
+        padding-left: 16px;
+
+        border-left: 1px solid rgba(225, 225, 225, 1);
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 18px;
+        }
+    }
+
+    &__link {
+        font-size: 17px;
+        line-height: 1.58;
+        color: $content-color-second;
+    }
+}

@@ -1,0 +1,25 @@
+.section {
+    &--primary {
+        padding: 80px 0;
+    }
+
+    &--second {
+        padding: 64px 0;
+    }
+
+    &__title {
+        font-size: 29px;
+        line-height: 1.16;
+        font-weight: 600;
+        color: $content-color-accent;
+    }
+
+    &__suptitle {
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 1.4;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #888888;
+    }
+}
