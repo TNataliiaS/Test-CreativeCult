@@ -160,12 +160,12 @@ button {
   overflow: hidden;
 }
 
-.text-uppercase {
-  text-transform: uppercase;
-}
-
 .page {
   overflow: hidden;
+}
+
+.bg-accent {
+  background-color: #003154;
 }
 
 /* Focus-element
@@ -487,7 +487,6 @@ button {
 
 .statistics {
   color: #fff;
-  background-color: #003154;
 }
 
 .statistics__description {
@@ -777,6 +776,10 @@ button {
   margin-bottom: 40px;
 }
 
+.brands {
+  padding-bottom: 22px;
+}
+
 .brands__title {
   margin-bottom: 40px;
 }
@@ -814,4 +817,227 @@ button {
 .brands__description {
   font-size: 14px;
   line-height: 1.58;
+}
+
+.footer {
+  padding: 72px 0 60px;
+  color: #EAEAEA;
+}
+
+.footer__wrapper-menu {
+  padding-bottom: 87px;
+  border-bottom: 1px solid #174463;
+}
+
+.footer__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 88px;
+  font-size: 12px;
+  line-height: 1.58;
+}
+
+.footer__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 374px;
+}
+
+.footer__item {
+  width: 136px;
+  margin-left: auto;
+}
+
+.footer__item:first-of-type {
+  width: auto;
+  margin-left: 0;
+  margin-right: 65px;
+}
+
+.footer__item:nth-of-type(2) {
+  width: 200px;
+  margin-left: 0;
+}
+
+.footer__item:nth-of-type(2) .footer__item-title {
+  margin-bottom: 19px;
+}
+
+.footer__item-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  width: 555px;
+  height: 282px;
+}
+
+.footer__item-list:first-child {
+  margin-bottom: 23px;
+  padding-right: 16px;
+}
+
+.footer__item-list--footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-right: 16px;
+  height: auto;
+  border-top: 1px solid #174463;
+}
+
+.footer__item-list--footer > .footer__item-element {
+  margin-bottom: 0;
+}
+
+.footer__item-title {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.52;
+  color: #fff;
+}
+
+.footer__item-title--first {
+  font-size: 21px;
+  line-height: 1.2;
+}
+
+.footer__item-element {
+  width: 200px;
+  margin-bottom: 14px;
+  font-size: 14px;
+  line-height: 1.58;
+}
+
+.footer__item-link {
+  padding-right: 3px;
+}
+
+.footer__item-icon {
+  width: 11px;
+  height: 14px;
+  fill: transparent;
+  stroke: #EAEAEA;
+  position: relative;
+  top: 2px;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 29px;
+}
+
+.footer__copyright {
+  margin-bottom: 24px;
+}
+
+.footer__link-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__link-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.footer__link > span {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.footer__main-right {
+  width: 525px;
+}
+
+.footer__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 22px;
+}
+
+.footer__contacts-phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-right: 64px;
+}
+
+.footer__contacts-phone-link {
+  display: inline-block;
+  margin-bottom: 1px;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 1.2;
+}
+
+.footer__contacts-phone-paragraph {
+  margin-left: 3px;
+  font-size: 11px;
+}
+
+.footer__address {
+  margin-bottom: 24px;
+  font-size: 12px;
+  font-style: normal;
+}
+
+.footer__info {
+  font-size: 10px;
+  color: #D0D0D0;
+}
+
+.footer__info-paragraph:first-child {
+  margin-bottom: 9px;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social__item {
+  margin-right: 6px;
+}
+
+.social__icon {
+  width: 40px;
+  height: 40px;
+  fill: #fff;
 }
