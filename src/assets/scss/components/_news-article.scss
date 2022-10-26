@@ -1,6 +1,5 @@
 .news-article {
-    display: flex;
-    flex-direction: column;
+    @extend %flex-column;
 
     background: #F7F7F8;
 
@@ -28,12 +27,6 @@
         font-weight: 600;
         line-height: 1.52;
         color: #000103;
-    }
-
-    &__title-link {
-        > sup {
-            font-size: 58%;
-        }
     }
 
     &__tags {

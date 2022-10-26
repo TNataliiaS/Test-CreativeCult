@@ -51,8 +51,7 @@
             height: 6px;
 
             background-image: url('../images/arrow-icon.svg');
-            background-repeat: no-repeat;
-            background-size: cover;
+            @extend %background-options;
 
             position: absolute;
             top: 9px;

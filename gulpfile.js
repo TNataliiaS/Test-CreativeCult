@@ -103,7 +103,7 @@ function css() {
         }))
         .pipe(gcmq())
         // Создание несжатого файла
-        // .pipe(gulp.dest(path.build.css))
+        .pipe(gulp.dest(path.build.css))
         .pipe(cleanCSS({
             level: {
                 1: {

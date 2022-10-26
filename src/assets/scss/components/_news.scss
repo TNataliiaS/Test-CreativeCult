@@ -3,10 +3,12 @@
     padding-bottom: 80px;
 
     &__header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @extend %flex-align-center-sb;
         margin-bottom: 32px;
+    }
+
+    &__title {
+        margin-bottom: 0;
     }
 
     &__wrapper {

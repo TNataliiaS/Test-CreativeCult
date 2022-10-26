@@ -13,21 +13,13 @@
         text-align: center;
     }
 
-    &__paragraph {
-        > sup {
-            font-size: 58%;
-        }
-    }
-
     &__description-list {
-        display: flex;
-        justify-content: space-between;
+        @extend %flex-align-center-sb;
         margin: 0;
     }
 
     &__description-group {
-        display: flex;
-        flex-direction: column;
+        @extend %flex-column;
 
         position: relative;
         z-index: 1;
@@ -35,8 +27,7 @@
         &:before {
             content: '';
 
-            background-repeat: no-repeat;
-            background-size: cover;
+            @extend %background-options;
 
             position: absolute;
             z-index: -1;

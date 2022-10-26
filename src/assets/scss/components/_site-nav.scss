@@ -1,7 +1,5 @@
 .site-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @extend %flex-align-center-sb;
     height: 54px;
 
     &__link {
@@ -23,8 +21,7 @@
                 height: 6px;
 
                 background-image: url('../images/arrow-icon.svg');
-                background-repeat: no-repeat;
-                background-size: contain;
+                @extend %background-options;
 
                 position: absolute;
                 top: 50%;
