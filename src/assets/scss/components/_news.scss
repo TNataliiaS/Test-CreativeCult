@@ -1,0 +1,15 @@
+.news {
+    padding-top: 64px;
+    padding-bottom: 80px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+
+    &__wrapper {
+        @extend %grid-columns;
+    }
+}

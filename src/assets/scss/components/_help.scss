@@ -1,7 +1,5 @@
 .help {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 24px;
+    @extend %grid-columns;
 
     &__text {
         grid-column: 1 / span 3;

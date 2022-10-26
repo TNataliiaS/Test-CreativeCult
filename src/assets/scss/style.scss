@@ -1,6 +1,6 @@
 @import "./fonts";
 @import "./vars";
-// @import "./extends";
+@import "./extends";
 @import "./mixins";
 @import "./base";
 
@@ -19,3 +19,5 @@
 @import "./components/about-us";
 @import "./components/help";
 @import "./components/help-element";
+@import "./components/news";
+@import "./components/news-article";

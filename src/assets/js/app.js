@@ -11,9 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
             clickable: true,
             dynamicBullets: true,
         },
-        mousewheel: {
-            invert: true,
-        },
         keyboard: {
             enabled: true,
             onlyInViewport: true,
