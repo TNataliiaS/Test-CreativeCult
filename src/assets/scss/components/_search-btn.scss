@@ -1,0 +1,23 @@
+.search-btn {
+    padding: 0;
+
+    border: 0;
+    background: none;
+    cursor: pointer;
+
+    &:before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 20px;
+
+        background-image: url('../images/search-icon.svg');
+        @extend %background-options;
+    }
+
+    &.active {
+        &:before {
+            background-image: none;
+        }
+    }
+}

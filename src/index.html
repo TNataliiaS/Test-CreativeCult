@@ -13,63 +13,110 @@
 <div class="page">
 
     <!-- Header -->
-    <header class="header container">
-        <div class="header__wrapper">
-            <a class="header__logo logo" href="#">
-                <img class="header__logo-img img" src="./assets/images/logo-theme-light.svg" alt="Логотип компании POLAIR">
-                <span class="header__logo-text">Профессиональное оборудование для предприятий общественного питания и торговли</span>
-            </a>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a class="header__logo logo" href="#">
+                    <img class="header__logo-img img" src="./assets/images/logo-theme-light.svg" alt="Логотип компании POLAIR">
+                    <span class="header__logo-text">Профессиональное оборудование для предприятий общественного питания и торговли</span>
+                </a>
 
-            <div class="actions-menu">
-                <ul class="actions-menu__list">
-                    <li>
-                        <a class="actions-menu__link actions-menu__link--feedback" href="#">Обратная связь</a>
-                    </li>
-                    <li>
-                        <a class="actions-menu__link" href="#">Eng</a>
-                    </li>
-                </ul>
+                <div class="actions-menu">
+                    <ul class="actions-menu__list">
+                        <li>
+                            <a class="actions-menu__link actions-menu__link--feedback" href="#">Обратная связь</a>
+                        </li>
+                        <li>
+                            <a class="actions-menu__link" href="#">Eng</a>
+                        </li>
+                    </ul>
 
-                <button class="actions-menu__search">
-                    <span class="visually-hidden">Поиск по сайту</span>
-                </button>
-            </div>
-        </div><!-- /.header__wrapper -->
+                    <button class="actions-menu__search search-btn" type="button" id="actions-menu-search">
+                        <span class="visually-hidden">Поиск по сайту</span>
+                        <span class="actions-menu__search-line"></span>
+                        <span class="actions-menu__search-line"></span>
+                    </button>
 
-        <ul class="site-nav">
-            <li>
-                <a class="site-nav__link site-nav__link--subnav" href="#">Продукция</a>
-            </li>
+                    <button class="burger" type="button">
+                        <span class="burger__item">Меню</span>
+                        <span class="burger__item">Меню</span>
+                        <span class="burger__item">Меню</span>
+                    </button>
+                </div><!-- /.actions-menu -->
+            </div><!-- /.header__wrapper -->
 
-            <li>
-                <a class="site-nav__link" href="#">Где купить</a>
-            </li>
+            <ul class="site-nav">
+                <li class="site-nav__item">
+                    <a class="site-nav__link site-nav__link--subnav" href="#">Продукция</a>
 
-            <li>
-                <a class="site-nav__link site-nav__link--subnav" href="#">Сервис и поддержка</a>
-            </li>
+                    <ul class="subnav">
+                        <li class="subnav__item">
+                            <a class="subnav__link" href="#">Шкафы холодильные</a>
+                        </li>
+                        <li class="subnav__item">
+                            <a class="subnav__link" href="#">Шкафы медицинские</a>
+                        </li>
+                        <li class="subnav__item">
+                            <a class="subnav__link" href="#">Столы холодильные</a>
+                        </li>
+                    </ul>
+                </li>
 
-            <li>
-                <a class="site-nav__link" href="#">Решения</a>
-            </li>
+                <li class="site-nav__item">
+                    <a class="site-nav__link" href="#">Где купить</a>
+                </li>
 
-            <li>
-                <a class="site-nav__link" href="#">О компании</a>
-            </li>
+                <li class="site-nav__item">
+                    <a class="site-nav__link site-nav__link--subnav" href="#">Сервис и поддержка</a>
 
-            <li>
-                <a class="site-nav__link" href="#">Медиа</a>
-            </li>
+                    <ul class="subnav">
+                        <li class="subnav__item">
+                            <a class="subnav__link" href="#">Найти авторизованный сервисный центр</a>
+                        </li>
+                        <li class="subnav__item">
+                            <a class="subnav__link" href="#">Скачайте документы и рекламные материалы</a>
+                        </li>
+                        <li class="subnav__item">
+                            <a class="subnav__link" href="#">Найти авторизованный сервисный центр</a>
+                        </li>
+                    </ul>
+                </li>
 
-            <li>
-                <a class="site-nav__link" href="#">Новости</a>
-            </li>
+                <li class="site-nav__item">
+                    <a class="site-nav__link" href="#">Решения</a>
+                </li>
 
-            <li>
-                <a class="site-nav__link" href="#">Контакты</a>
-            </li>
-        </ul><!-- /.site-nav -->
+                <li class="site-nav__item">
+                    <a class="site-nav__link" href="#">О компании</a>
+                </li>
+
+                <li class="site-nav__item">
+                    <a class="site-nav__link" href="#">Медиа</a>
+                </li>
+
+                <li class="site-nav__item">
+                    <a class="site-nav__link" href="#">Новости</a>
+                </li>
+
+                <li class="site-nav__item">
+                    <a class="site-nav__link" href="#">Контакты</a>
+                </li>
+            </ul><!-- /.site-nav -->
+        </div><!-- /.container -->
+
+        <div class="header__form" id="header-form">
+            <div class="container">
+                <div class="header__form-wrapper">
+                    <form class="form-search" action="/" method="POST">
+                        <label class="visually-hidden" for="search-field">Поиск</label>
+                        <input class="form-search__input" id="search-field" type="text" name="search-field" placeholder="Поиск">
+                        <button class="form-search__btn search-btn" type="submit"></button>
+                    </form>
+                </div>
+            </div><!-- /.container -->
+        </div><!-- /.header__form -->
     </header>
+
 
     <!-- Main -->
     <main id="main">

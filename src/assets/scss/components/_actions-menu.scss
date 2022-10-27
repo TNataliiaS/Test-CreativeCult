@@ -3,6 +3,10 @@
 
     &__list {
         display: flex;
+
+        @include breakpoint($breakpoint-lg) {
+            display: none;
+        }
     }
 
     &__link {
@@ -11,6 +15,10 @@
         font-size: 14px;
         line-height: 1.58;
         color: $content-color-accent;
+
+        transition: opacity .1s ease;
+
+        @extend %link-hover-active;
 
         &--feedback {
             padding-left: 23px;
@@ -29,24 +37,51 @@
                 position: absolute;
                 top: 0;
                 left: 0;
+
+                @extend %link-hover-active;
             }
         }
     }
 
     &__search {
-        padding: 0;
+        @extend %link-hover-active;
+        position: relative;
 
-        border: 0;
-        background: none;
+        @include breakpoint($breakpoint-lg) {
+            margin-right: 20px;
+        }
 
-        &:before {
-            content: '';
-            display: block;
-            width: 20px;
-            height: 20px;
+        &.active {
+            .actions-menu__search-line {
+                display: block;
+            }
+        }
+    }
 
-            background-image: url('../images/search-icon.svg');
-            @extend %background-options;
+    &__search-line {
+        display: none;
+        width: 20px;
+        height: 2px;
+
+        background: $content-color-second;
+
+        position: absolute;
+        top: 50%;
+        left: 0;
+
+        transform: translate(-50%);
+
+        &:nth-child(2),
+        &:nth-child(3) {
+            transform-origin: center;
+        }
+
+        &:nth-child(2) {
+            transform: rotate(45deg);
+        }
+
+        &:nth-child(3) {
+            transform: rotate(-45deg);
         }
     }
 }

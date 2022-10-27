@@ -1,0 +1,27 @@
+.subnav {
+    display: none;
+    width: 200px;
+
+    background: $primary-color;
+    box-shadow: 0 6px 8px rgba($content-color-accent, .2);
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+
+    &__item {
+        transition: background .2s ease-in-out;
+
+        &:hover {
+            background: #F2F6FB;
+        }
+    }
+
+    &__link {
+        display: block;
+        padding: 8px;
+
+        font-size: 14px;
+    }
+}
