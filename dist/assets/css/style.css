@@ -515,7 +515,8 @@ button {
 }
 
 .intro__slider {
-  overflow: visible;
+  padding: 0 70px;
+  margin: 0 -70px;
 }
 
 .intro__slide {
@@ -593,6 +594,9 @@ button {
   background-color: transparent;
   border: 0;
   cursor: pointer;
+  -webkit-transition: background-size 0.5s, color 0.5s;
+  -o-transition: background-size 0.5s, color 0.5s;
+  transition: background-size 0.5s, color 0.5s;
 }
 
 .btn--standard {
@@ -605,7 +609,24 @@ button {
 .btn--primary {
   padding-left: 58px;
   padding-right: 58px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#003154), to(#003154));
+  background-image: -o-linear-gradient(#003154, #003154);
+  background-image: linear-gradient(#003154, #003154);
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  background-size: 0% 100%;
   color: #003154;
+}
+
+.btn--primary:hover {
+  color: #fff;
+  background-color: #F7F7F8;
+  background-size: 100% 100%;
+}
+
+.btn--primary:active {
+  color: #fff;
+  background-color: #003154;
 }
 
 .btn--second {
@@ -1256,6 +1277,18 @@ button {
   fill: #fff;
 }
 
+@media (max-width: 1199px) {
+  .intro__content {
+    width: 40%;
+    margin-right: 30px;
+    max-width: none;
+  }
+
+  .intro__img {
+    width: 60%;
+  }
+}
+
 @media (max-width: 991px) {
   .actions-menu__list {
     display: none;
@@ -1271,8 +1304,7 @@ button {
 
   .site-nav {
     height: 66px;
-    padding-bottom: 5px;
-    overflow-x: scroll;
+    overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
 
@@ -1285,7 +1317,7 @@ button {
   }
 
   .site-nav__link {
-    padding: 11px 12px;
+    padding: 9px 12px;
     font-size: 14px;
     line-height: 1.58;
     background: #F7F7F8;
@@ -1299,6 +1331,38 @@ button {
   .site-nav__link--subnav:after {
     display: none;
   }
+
+  .intro__slide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .intro__content {
+    width: 75%;
+    margin-right: 0;
+    padding-bottom: 70px;
+  }
+
+  .intro__description {
+    margin-bottom: 29px;
+  }
+
+  .intro__img {
+    width: 70%;
+    padding: 50px 0;
+  }
+
+  .intro__img {
+    width: 80%;
+  }
+
+  .intro__slide-img {
+    width: 529px;
+    height: 396px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1309,6 +1373,16 @@ button {
   .form-search__input {
     padding: 10px;
     font-size: 14px;
+  }
+
+  .intro {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(29.6%, rgb(96, 192, 195)), color-stop(29.6%, rgb(247, 247, 248)));
+    background: -o-linear-gradient(top, rgb(96, 192, 195) 29.6%, rgb(247, 247, 248) 29.6%);
+    background: linear-gradient(180deg, rgb(96, 192, 195) 29.6%, rgb(247, 247, 248) 29.6%);
+  }
+
+  .intro__content {
+    width: 100%;
   }
 }
 
@@ -1322,7 +1396,17 @@ button {
   }
 
   .site-nav__item {
+    padding-top: 11px;
     margin-right: 15px;
+  }
+
+  .intro__img {
+    width: 100%;
+  }
+
+  .intro__slide-img {
+    width: 449px;
+    height: 336px;
   }
 }
 
@@ -1347,5 +1431,67 @@ button {
 
   .burger__item {
     width: 18px;
+  }
+
+  .intro {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(29.6%, rgb(96, 192, 195)), color-stop(29.6%, rgb(247, 247, 248)));
+    background: -o-linear-gradient(top, rgb(96, 192, 195) 29.6%, rgb(247, 247, 248) 29.6%);
+    background: linear-gradient(180deg, rgb(96, 192, 195) 29.6%, rgb(247, 247, 248) 29.6%);
+  }
+
+  .intro__slide {
+    height: 550px;
+  }
+
+  .intro__content {
+    margin-bottom: auto;
+    padding-bottom: 0;
+  }
+
+  .intro__decorative {
+    margin-bottom: 0;
+  }
+
+  .intro__decorative-item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .intro__decorative-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .intro__title {
+    margin-bottom: 7px;
+    font-size: 23px;
+    line-height: 1.1;
+  }
+
+  .intro__description {
+    font-size: 15px;
+    line-height: 1.58;
+  }
+
+  .intro__img {
+    margin: 24px 0;
+    padding: 0;
+  }
+
+  .intro__slide-img {
+    width: 288px;
+    height: 216px;
+  }
+
+  .intro__swiper-pagination.swiper-pagination {
+    bottom: 43px;
+  }
+
+  .intro__swiper-pagination.swiper-pagination.swiper-pagination-bullets {
+    left: 70.3%;
+  }
+
+  .btn--primary {
+    padding-left: 38px;
+    padding-right: 38px;
   }
 }

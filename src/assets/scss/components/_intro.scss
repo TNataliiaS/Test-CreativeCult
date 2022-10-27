@@ -1,35 +1,87 @@
 .intro {
     background: linear-gradient(90deg, rgba(247, 247, 248, 1) 70.4%, rgba(96, 192, 195, 1) 70.4%);
 
+    @include breakpoint($breakpoint-md) {
+        background: linear-gradient(180deg, rgba(96, 192, 195, 1) 29.6%, rgba(247, 247, 248, 1) 29.6%);
+    }
+
+    @include breakpoint($breakpoint-xs) {
+        background: linear-gradient(180deg, rgba(96, 192, 195, 1) 29.6%, rgba(247, 247, 248, 1) 29.6%);
+    }
+
     &__slider {
-        overflow: visible;
+        padding: 0 70px;
+        margin: 0 -70px;
     }
 
     &__slide {
         @extend %flex-align-center;
         height: 600px;
+
+        @include breakpoint($breakpoint-lg) {
+            flex-direction: column-reverse;
+            height: auto;
+        }
+
+        @include breakpoint($breakpoint-xs) {
+            height: 550px;
+        }
     }
 
     &__content {
         width: 50%;
         max-width: 486px;
         margin-right: auto;
+
+        @include breakpoint($breakpoint-xl) {
+            width: 40%;
+            margin-right: 30px;
+            max-width: none;
+        }
+
+        @include breakpoint($breakpoint-lg) {
+            width: 75%;
+            margin-right: 0;
+            padding-bottom: 70px;
+        }
+
+        @include breakpoint($breakpoint-md) {
+            width: 100%;
+        }
+
+        @include breakpoint($breakpoint-xs) {
+            margin-bottom: auto;
+            padding-bottom: 0;
+        }
     }
 
     &__decorative {
         display: flex;
         margin-bottom: 12px;
+
+        @include breakpoint($breakpoint-xs) {
+            margin-bottom: 0;
+        }
     }
 
     &__decorative-item {
         &:not(:last-child) {
             margin-right: 16px;
+
+            @include breakpoint($breakpoint-xs) {
+                margin-right: 10px;
+            }
         }
     }
 
     &__decorative-icon {
         width: 40px;
         height: 40px;
+
+        @include breakpoint($breakpoint-xs) {
+            width: 24px;
+            height: 24px;
+        }
     }
 
     &__title {
@@ -39,6 +91,13 @@
         font-size: 33px;
         line-height: 1.16;
         color: $content-color-accent;
+
+        @include breakpoint($breakpoint-xs) {
+            margin-bottom: 7px;
+
+            font-size: 23px;
+            line-height: 1.1;
+        }
     }
 
     &__description {
@@ -46,10 +105,41 @@
 
         font-size: 18px;
         line-height: 1.62;
+
+        @include breakpoint($breakpoint-lg) {
+            margin-bottom: 29px;
+        }
+
+        @include breakpoint($breakpoint-xs) {
+            font-size: 15px;
+            line-height: 1.58;
+        }
     }
 
     &__img {
         width: 50%;
+
+        @include breakpoint($breakpoint-xl) {
+            width: 60%;
+        }
+
+        @include breakpoint($breakpoint-lg) {
+            width: 70%;
+            padding: 50px 0;
+        }
+
+        @include breakpoint($breakpoint-lg) {
+            width: 80%;
+        }
+
+        @include breakpoint($breakpoint-sm) {
+            width: 100%;
+        }
+
+        @include breakpoint($breakpoint-xs) {
+            margin: 24px 0;
+            padding: 0;
+        }
     }
 
     &__slide-img {
@@ -59,11 +149,36 @@
         object-fit: cover;
 
         filter: drop-shadow(4px 8px 24px rgba(0, 0, 0, 0.2)) drop-shadow(16px 28px 64px rgba(0, 0, 0, 0.16));
+
+        @include breakpoint($breakpoint-lg) {
+            width: 529px;
+            height: 396px;
+        }
+
+        @include breakpoint($breakpoint-sm) {
+            width: 449px;
+            height: 336px;
+        }
+
+        @include breakpoint($breakpoint-xs) {
+            width: 288px;
+            height: 216px;
+        }
     }
 
     &__swiper-pagination {
         &.swiper-pagination {
             bottom: 32px;
+
+            @include breakpoint($breakpoint-xs) {
+                bottom: 43px;
+            }
+
+            &.swiper-pagination-bullets {
+                @include breakpoint($breakpoint-xs) {
+                    left: 70.3%;
+                }
+            }
         }
 
         > .swiper-pagination-bullet {
