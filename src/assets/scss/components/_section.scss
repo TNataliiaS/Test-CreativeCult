@@ -1,6 +1,11 @@
 .section {
     &--primary {
         padding: 80px 0;
+
+        @include breakpoint($breakpoint-xs) {
+            padding-top: 46px;
+            padding-bottom: 52px;
+        }
     }
 
     &--second {
@@ -25,5 +30,11 @@
         line-height: 1.16;
         font-weight: 600;
         color: $content-color-accent;
+
+        @include breakpoint($breakpoint-xs) {
+            margin-bottom: 10px;
+
+            font-size: 27px;
+        }
     }
 }
