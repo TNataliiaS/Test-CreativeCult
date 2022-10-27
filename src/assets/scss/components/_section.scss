@@ -7,19 +7,23 @@
         padding: 64px 0;
     }
 
-    &__title {
-        font-size: 29px;
-        line-height: 1.16;
-        font-weight: 600;
-        color: $content-color-accent;
-    }
-
     &__suptitle {
+        margin-bottom: 9px;
+
         font-size: 13px;
         font-weight: 600;
         line-height: 1.4;
         letter-spacing: 0.08em;
         text-transform: uppercase;
         color: #888888;
+    }
+
+    &__title {
+        margin-bottom: 16px;
+
+        font-size: 29px;
+        line-height: 1.16;
+        font-weight: 600;
+        color: $content-color-accent;
     }
 }

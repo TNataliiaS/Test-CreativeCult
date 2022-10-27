@@ -1,8 +1,6 @@
 .header {
     &__wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @extend %flex-align-center-sb;
         height: 82px;
     }
 

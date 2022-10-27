@@ -1,15 +1,27 @@
-// %grid-columns {
-//     display: grid;
-//     grid-template-columns: repeat(12, 1fr);
-//     column-gap: 24px;
-// }
+%grid-columns {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+}
 
-// %flex-column {
-//     display: flex;
-//     flex-direction: column;
-// }
+%flex-column {
+    display: flex;
+    flex-direction: column;
+}
 
-// %flex-align-center {
-//     display: flex;
-//     align-items: center;
-// }
+%flex-align-center {
+    display: flex;
+    align-items: center;
+}
+
+%flex-align-center-sb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+%background-options {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

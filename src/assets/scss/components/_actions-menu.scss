@@ -1,6 +1,5 @@
 .actions-menu {
-    display: flex;
-    align-items: center;
+    @extend %flex-align-center;
 
     &__list {
         display: flex;
@@ -25,8 +24,7 @@
                 margin-top: -1px;
 
                 background-image: url('../images/letter-icon.svg');
-                background-repeat: no-repeat;
-                background-size: contain;
+                @extend %background-options;
 
                 position: absolute;
                 top: 0;
@@ -48,8 +46,7 @@
             height: 20px;
 
             background-image: url('../images/search-icon.svg');
-            background-repeat: no-repeat;
-            background-size: cover;
+            @extend %background-options;
         }
     }
 }

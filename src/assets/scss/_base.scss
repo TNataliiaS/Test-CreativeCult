@@ -57,12 +57,12 @@ input, textarea, select, button {
     overflow: hidden;
 }
 
-.text-uppercase {
-    text-transform: uppercase;
-}
-
 .page {
     overflow: hidden;
+}
+
+.bg-accent {
+    background-color: $content-color-accent;
 }
 
 

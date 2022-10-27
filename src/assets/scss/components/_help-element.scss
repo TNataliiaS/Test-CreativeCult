@@ -1,6 +1,5 @@
 .help-element {
-    display: flex;
-    flex-direction: column;
+    @extend %flex-column;
     padding: 0 32px 40px 32px;
     height: 612px;
 

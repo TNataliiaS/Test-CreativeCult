@@ -39,7 +39,7 @@
     }
 
     &--link {
-        padding-right: 15px;
+        padding-right: 16px;
 
         color: $content-color-second;
 
@@ -51,11 +51,10 @@
             height: 6px;
 
             background-image: url('../images/arrow-icon.svg');
-            background-repeat: no-repeat;
-            background-size: cover;
+            @extend %background-options;
 
             position: absolute;
-            top: 7px;
+            top: 9px;
             right: 0;
             z-index: 1;
 
