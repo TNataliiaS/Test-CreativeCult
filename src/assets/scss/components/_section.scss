@@ -21,6 +21,10 @@
         letter-spacing: 0.08em;
         text-transform: uppercase;
         color: #888888;
+
+        @include breakpoint($breakpoint-xs) {
+            font-size: 12px;
+        }
     }
 
     &__title {

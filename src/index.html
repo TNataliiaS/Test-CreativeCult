@@ -439,13 +439,18 @@
 
         <!-- About-us -->
         <section class="about-us section">
-            <div class="about-us__item">
-                <img class="about-us__img img" src="./assets/images/about-us-picture.jpg" alt="Тарелка с замороженными ягодами">
-            </div>
-            <div class="about-us__item about-us__content">
+            <picture class="about-us__item">
+                <source srcset="./assets/images/about-us/about-us-picture-small@1x.webp 1x, ./assets/images/about-us/about-us-picture-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
+                <source srcset="./assets/images/about-us/about-us-picture-small@1x.jpg 1x, ./assets/images/about-us/about-us-picture-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
+
+                <source srcset="./assets/images/about-us/about-us-picture@1x.webp 1x, ./assets/images/about-us/about-us-picture@2x.webp 2x" type="image/webp">
+                <img class="about-us__img img" src="./assets/images/about-us/about-us-picture@1x.jpg" srcset="./assets/images/about-us/about-us-picture@2x.jpg 2x" alt="Тарелка с замороженными ягодами">
+            </picture>
+
+            <div class="about-us__item about-us__item--content">
                 <div class="about-us__text">
                     <h2 class="section__suptitle">о группе компаний</h2>
-                    <h3 class="section__title">Высокие стандарты качества</h3>
+                    <h3 class="about-us__title section__title">Высокие стандарты качества</h3>
                     <p class="about-us__description">Продукция Polair™ проходит 100% сквозной контроль качества и использует экологичные технологии производства.</p>
                     <a class="btn btn--link" href="#">Больше о нас</a>
                 </div>
