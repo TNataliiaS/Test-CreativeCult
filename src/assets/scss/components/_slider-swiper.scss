@@ -1,0 +1,25 @@
+.slider-swiper {
+    > .swiper-pagination >.swiper-pagination-bullet {
+        background: $content-color-accent;
+    }
+
+    > .intro__swiper-pagination {
+        &.swiper-pagination {
+            bottom: 32px;
+
+            @include breakpoint($breakpoint-xs) {
+                bottom: 43px;
+            }
+
+            &.swiper-pagination-bullets {
+                @include breakpoint($breakpoint-xs) {
+                    left: 70.3%;
+                }
+            }
+        }
+    }
+
+    &.brands__list.swiper-grid-column > .swiper-wrapper {
+        flex-direction: row;
+    }
+}

@@ -165,24 +165,4 @@
             height: 216px;
         }
     }
-
-    &__swiper-pagination {
-        &.swiper-pagination {
-            bottom: 32px;
-
-            @include breakpoint($breakpoint-xs) {
-                bottom: 43px;
-            }
-
-            &.swiper-pagination-bullets {
-                @include breakpoint($breakpoint-xs) {
-                    left: 70.3%;
-                }
-            }
-        }
-
-        > .swiper-pagination-bullet {
-            background: $content-color-accent;
-        }
-    }
 }
