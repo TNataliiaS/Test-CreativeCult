@@ -2,16 +2,38 @@
     padding-top: 64px;
     padding-bottom: 80px;
 
+    @include breakpoint($breakpoint-xs) {
+        padding-top: 47px;
+        padding-bottom: 52px;
+    }
+
     &__header {
         @extend %flex-align-center-sb;
-        margin-bottom: 32px;
+        margin-bottom: 33px;
+
+        @include breakpoint($breakpoint-xs) {
+            margin-bottom: 30px;
+        }
     }
 
     &__title {
         margin-bottom: 0;
     }
 
+    &__btn {
+        margin-top: 8px;
+    }
+
     &__wrapper {
         @extend %grid-columns;
+
+        @include breakpoint($breakpoint-lg) {
+            row-gap: 24px;
+        }
+
+        @include breakpoint($breakpoint-xs) {
+            row-gap: 0;
+            grid-template-columns: repeat(4, 1fr);
+        }
     }
 }

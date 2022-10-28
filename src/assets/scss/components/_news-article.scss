@@ -1,23 +1,73 @@
 .news-article {
     @extend %flex-column;
+    grid-row: 1;
 
     background: #F7F7F8;
 
+    @include breakpoint($breakpoint-xs) {
+        &:not(:last-of-type) {
+            margin-bottom: 21.5px;
+        }
+    }
+
     &:nth-of-type(1) {
         grid-column: 1 / span 4;
+
+        @include breakpoint($breakpoint-lg) {
+            grid-column: 2 / span 5;
+        }
+
+        @include breakpoint($breakpoint-lg-additional) {
+            grid-column: 1 / span 6;
+        }
+
+        @include breakpoint($breakpoint-xs) {
+            grid-column: 1 / -1;
+        }
     }
 
     &:nth-of-type(2) {
         grid-column: 5 / span 4;
+
+        @include breakpoint($breakpoint-lg) {
+            grid-column: 7 / span 5;
+        }
+
+        @include breakpoint($breakpoint-lg-additional) {
+            grid-column: 7 / span 6;
+        }
+
+        @include breakpoint($breakpoint-xs) {
+            grid-column: 1 / -1;
+            grid-row: 2;
+        }
     }
 
     &:nth-of-type(3) {
         grid-column: 9 / span 4;
+
+        @include breakpoint($breakpoint-lg) {
+            grid-column: 2 / span 5;
+            grid-row: 2;
+        }
+
+        @include breakpoint($breakpoint-lg-additional) {
+            grid-column: 1 / span 6;
+        }
+
+        @include breakpoint($breakpoint-xs) {
+            grid-column: 1 / -1;
+            grid-row: 3;
+        }
     }
 
     &__content {
         padding: 23px;
         order: 2;
+
+        @include breakpoint($breakpoint-sm) {
+            padding: 18px 16px 15px;
+        }
     }
 
     &__title {
@@ -27,11 +77,24 @@
         font-weight: 600;
         line-height: 1.52;
         color: #000103;
+
+        transition: opacity .2s linear;
+        @extend %link-hover-active;
+
+        @include breakpoint($breakpoint-sm) {
+            margin-bottom: 8px;
+
+            font-size: 17px;
+        }
     }
 
     &__tags {
         display: flex;
         margin-bottom: 16px;
+
+        @include breakpoint($breakpoint-xs) {
+            margin-bottom: 9px;
+        }
     }
 
     &__tags-item {
@@ -52,6 +115,13 @@
             border-radius: 50%;
             background-color: #D0D0D0;
         }
+
+        &:first-child {
+            &:hover,
+            &:active {
+                text-decoration: underline;
+            }
+        }
     }
 
     &__date {
@@ -70,11 +140,27 @@
         -webkit-line-clamp: 2;
                 line-clamp: 2;
         -webkit-box-orient: vertical;
+
+        @include breakpoint($breakpoint-xs) {
+            display: block;
+            text-overflow: clip;
+        }
     }
 
     &__img {
-        order: 1;
+        width: 100%;
+        height: 288px;
+        object-fit: cover;
 
         border-radius: 2px;
+
+        order: 1;
+
+        transition: opacity .2s linear;
+        @extend %link-hover-active;
+
+        @include breakpoint($breakpoint-sm) {
+            height: 216px;
+        }
     }
 }

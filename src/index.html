@@ -501,7 +501,7 @@
             <div class="container">
                 <div class="news__header">
                     <h2 class="news__title section__title">Новости</h2>
-                    <a class="btn btn--link" href="#">Все новости</a>
+                    <a class="news__btn btn btn--link" href="#">Все новости</a>
                 </div>
 
                 <div class="news__wrapper">
@@ -520,8 +520,14 @@
                             </h3>
                             <p class="news-article__description">В новом визуальном стиле сохраняются узнаваемые элементы, но при этом он стал выглядеть более современно и динамично.</p>
                         </div>
-                        <a class="news-article__img" href="#">
-                            <img class="img" src="./assets/images/news-photo-1.jpg" alt="">
+                        <a href="#">
+                            <picture>
+                                <source srcset="./assets/images/news/news-photo-1-small@1x.webp 1x, ./assets/images/news/news-photo-1-small@2x.webp 2x" media="(max-width: 320px)" type="image/webp">
+                                <source srcset="./assets/images/news/news-photo-1-small@1x.jpg 1x, ./assets/images/news/news-photo-1-small@2x.jpg 2x" media="(max-width: 320px)" type="image/jpg">
+
+                                <source srcset="./assets/images/news/news-photo-1@1x.webp 1x, ./assets/images/news/news-photo-1@2x.webp 2x" type="image/webp">
+                                <img class="news-article__img img" src="./assets/images/news/news-photo-1@1x.jpg" srcset="./assets/images/news/news-photo-1@2x.jpg 2x" alt="Встречайте обновление фирменного стиля POLAIR">
+                            </picture>
                         </a>
                     </article>
 
@@ -540,8 +546,14 @@
                             </h3>
                             <p class="news-article__description">Представляем профессиональное холодильное оборудование для ритейла.</p>
                         </div>
-                        <a class="news-article__img" href="#">
-                            <img class="img" src="./assets/images/news-photo-2.jpg" alt="">
+                        <a href="#">
+                            <picture>
+                                <source srcset="./assets/images/news/news-photo-2-small@1x.webp 1x, ./assets/images/news/news-photo-2-small@2x.webp 2x" media="(max-width: 320px)" type="image/webp">
+                                <source srcset="./assets/images/news/news-photo-2-small@1x.jpg 1x, ./assets/images/news/news-photo-2-small@2x.jpg 2x" media="(max-width: 320px)" type="image/jpg">
+
+                                <source srcset="./assets/images/news/news-photo-2@1x.webp 1x, ./assets/images/news/news-photo-2@2x.webp 2x" type="image/webp">
+                                <img class="news-article__img img" src="./assets/images/news/news-photo-2@1x.jpg" srcset="./assets/images/news/news-photo-2@2x.jpg 2x" alt="Polair Group представляет свой новый бренд Dazzl">
+                            </picture>
                         </a>
                     </article>
 
@@ -560,8 +572,14 @@
                             </h3>
                             <p class="news-article__description">В новом визуальном стиле сохраняются узнаваемые элементы, но при этом он стал выглядеть более современно и динамично.</p>
                         </div>
-                        <a class="news-article__img" href="#">
-                            <img class="img" src="./assets/images/news-photo-3.jpg" alt="">
+                        <a href="#">
+                            <picture>
+                                <source srcset="./assets/images/news/news-photo-1-small@1x.webp 1x, ./assets/images/news/news-photo-1-small@2x.webp 2x" media="(max-width: 320px)" type="image/webp">
+                                <source srcset="./assets/images/news/news-photo-1-small@1x.jpg 1x, ./assets/images/news/news-photo-1-small@2x.jpg 2x" media="(max-width: 320px)" type="image/jpg">
+
+                                <source srcset="./assets/images/news/news-photo-3@1x.webp 1x, ./assets/images/news/news-photo-3@2x.webp 2x" type="image/webp">
+                                <img class="news-article__img img" src="./assets/images/news/news-photo-3@1x.jpg" srcset="./assets/images/news/news-photo-3@2x.jpg 2x" alt="Встречайте обновление фирменного стиля POLAIR">
+                            </picture>
                         </a>
                     </article>
                 </div><!-- /.news__wrapper -->
