@@ -1101,7 +1101,7 @@ button {
   background: #F2F6FB;
   border-radius: 2px;
   position: absolute;
-  top: 161px;
+  top: 160px;
   left: 0;
 }
 
@@ -1782,6 +1782,11 @@ button {
   .main-menu__list:last-child {
     margin-bottom: 0;
   }
+
+  .download-catalog__content {
+    width: 100%;
+    padding: 24px 16px;
+  }
 }
 
 @media (max-width: 414px) {
@@ -2013,5 +2018,14 @@ button {
     display: block;
     -o-text-overflow: clip;
     text-overflow: clip;
+  }
+
+  .download-catalog {
+    height: 555px;
+    background-image: url("../images/download-catalog-bg-mobile.jpg");
+  }
+
+  .download-catalog__btn {
+    width: 100%;
   }
 }

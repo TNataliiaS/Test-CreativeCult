@@ -4,6 +4,12 @@
     background-image: url('../images/download-catalog-bg.jpg');
     @extend %background-options;
 
+    @include breakpoint($breakpoint-xs) {
+        height: 555px;
+
+        background-image: url('../images/download-catalog-bg-mobile.jpg');
+    }
+
     &__inner {
         position: relative;
     }
@@ -16,11 +22,22 @@
         border-radius: 2px;
 
         position: absolute;
-        top: 161px;
+        top: 160px;
         left: 0;
+
+        @include breakpoint($breakpoint-sm-additional) {
+            width: 100%;
+            padding: 24px 16px;
+        }
     }
 
     &__description {
         margin-bottom: 40px;
+    }
+
+    &__btn {
+        @include breakpoint($breakpoint-xs) {
+            width: 100%;
+        }
     }
 }
