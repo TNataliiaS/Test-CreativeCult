@@ -583,14 +583,6 @@ button {
   filter: drop-shadow(4px 8px 24px rgba(0, 0, 0, 0.2)) drop-shadow(16px 28px 64px rgba(0, 0, 0, 0.16));
 }
 
-.intro__swiper-pagination.swiper-pagination {
-  bottom: 32px;
-}
-
-.intro__swiper-pagination > .swiper-pagination-bullet {
-  background: #003154;
-}
-
 .btn {
   display: inline-block;
   vertical-align: middle;
@@ -706,6 +698,21 @@ button {
 .btn--link:hover:before,
 .btn--link:active:before {
   width: 100%;
+}
+
+.slider-swiper > .swiper-pagination > .swiper-pagination-bullet {
+  background: #003154;
+}
+
+.slider-swiper > .intro__swiper-pagination.swiper-pagination {
+  bottom: 32px;
+}
+
+.slider-swiper.brands__list.swiper-grid-column > .swiper-wrapper {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .section--primary {
@@ -1616,6 +1623,11 @@ button {
     -ms-grid-column-span: 6;
     grid-column: 1/span 6;
   }
+
+  .brands__item {
+    -ms-flex-preferred-size: 33.33333%;
+    flex-basis: 33.33333%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1675,6 +1687,11 @@ button {
 
   .about-us__text {
     max-width: 75%;
+  }
+
+  .brands__item {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
   }
 }
 
@@ -1861,17 +1878,17 @@ button {
     height: 216px;
   }
 
-  .intro__swiper-pagination.swiper-pagination {
-    bottom: 43px;
-  }
-
-  .intro__swiper-pagination.swiper-pagination.swiper-pagination-bullets {
-    left: 70.3%;
-  }
-
   .btn--primary {
     padding-left: 38px;
     padding-right: 38px;
+  }
+
+  .slider-swiper > .intro__swiper-pagination.swiper-pagination {
+    bottom: 43px;
+  }
+
+  .slider-swiper > .intro__swiper-pagination.swiper-pagination.swiper-pagination-bullets {
+    left: 70.3%;
   }
 
   .section--primary {
@@ -2027,5 +2044,31 @@ button {
 
   .download-catalog__btn {
     width: 100%;
+  }
+
+  .brands {
+    padding-bottom: 42px;
+  }
+
+  .brands__title {
+    display: none;
+  }
+
+  .brands__list {
+    margin-top: -7px;
+    padding-bottom: 18px;
+  }
+
+  .brands__item {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+
+  .brands__icon {
+    margin-bottom: 2px;
+  }
+
+  .brands__description {
+    font-size: 13px;
   }
 }
