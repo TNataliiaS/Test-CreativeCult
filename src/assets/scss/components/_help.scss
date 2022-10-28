@@ -1,9 +1,22 @@
 .help {
     @extend %grid-columns;
 
+    @include breakpoint($breakpoint-xs) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
     &__text {
         grid-column: 1 / span 3;
         margin-top: auto;
         margin-bottom: 21px;
+
+        @include breakpoint($breakpoint-lg) {
+            grid-column: 1 / -1;
+            margin-bottom: 37px;
+        }
+
+        @include breakpoint($breakpoint-xs) {
+            padding-left: 4px;
+        }
     }
 }

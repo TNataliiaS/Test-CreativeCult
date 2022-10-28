@@ -10,6 +10,10 @@
 
     &--second {
         padding: 64px 0;
+
+        @include breakpoint($breakpoint-xs) {
+            padding: 52px 0;
+        }
     }
 
     &__suptitle {
@@ -36,8 +40,6 @@
         color: $content-color-accent;
 
         @include breakpoint($breakpoint-xs) {
-            margin-bottom: 10px;
-
             font-size: 27px;
         }
     }

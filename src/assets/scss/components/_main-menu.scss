@@ -19,6 +19,10 @@
 
     &__title {
         margin-bottom: 22px;
+
+        @include breakpoint($breakpoint-xs) {
+            margin-bottom: 10px;
+        }
     }
 
     &__nav {

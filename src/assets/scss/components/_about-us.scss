@@ -58,7 +58,7 @@
         }
     }
 
-    &__title {
+    &__subtitle {
         @include breakpoint($breakpoint-xs) {
             margin-bottom: 14px;
         }

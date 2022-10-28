@@ -28,10 +28,8 @@
         padding-left: 58px;
         padding-right: 58px;
 
+        background-color: #F7F7F8;
         background-image: linear-gradient($content-color-accent, $content-color-accent);
-        background-repeat: no-repeat;
-        background-position: 0% 50%;
-        background-size: 0% 100%;
 
         color: $content-color-accent;
 
@@ -60,7 +58,33 @@
         color: $primary-color;
 
         background-color: $content-color-accent;
+        background-image: linear-gradient(#F7F7F8, #F7F7F8);
+
+        &:hover {
+            color: $secondary-color;
+
+            background-color: $content-color-accent;
+        }
+
+        &:active {
+            color: $secondary-color;
+
+            background-color: #F7F7F8;
+        }
     }
+
+
+    &--primary,
+    &--second {
+        background-repeat: no-repeat;
+        background-position: 0% 50%;
+        background-size: 0% 100%;
+
+        &:hover {
+            background-size: 100% 100%;
+        }
+    }
+
 
     &--link {
         padding-right: 16px;
