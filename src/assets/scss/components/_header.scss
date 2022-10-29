@@ -16,10 +16,6 @@
         max-width: 520px;
         margin-right: 24px;
 
-        transition: opacity .1s ease;
-
-        @extend %link-hover-active;
-
         &.logo {
             width: auto;
         }

@@ -669,10 +669,10 @@
                                 <p class="brands__description">Профессиональное оборудование для предприятий торговли и HoReCa</p>
                             </a>
                         </div>
-                    </div>
+                    </div><!-- /.swiper-wrapper -->
 
                     <div class="brands__swiper-pagination swiper-pagination"></div>
-                </div>
+                </div><!-- /.brands__list -->
             </div><!-- /.brands -->
         </section>
     </main>
@@ -684,7 +684,8 @@
             <div class="container">
                 <ul class="footer__menu">
                     <li class="footer__item">
-                        <ul class="footer__item-list">
+                        <a class="footer__item-title footer__item-title--first-mobile footer__item-title--subnav" href="#">Продукция</a>
+                        <ul class="footer__item-list footer__item-list--first">
                             <a class="footer__item-title footer__item-title--first" href="#">Продукция</a>
                             <li class="footer__item-element">
                                 <a href="#">Шкафы холодильные</a>
@@ -785,26 +786,14 @@
 
         <div class="container">
             <div class="footer__main">
-                <div class="footer__main-left">
-                    <a class="footer__logo logo" href="#">
-                        <img class="img" src="./assets/images/logo-theme-dark.svg" alt="Логотип компании POLAIR">
-                    </a>
-                    <p class="footer__copyright">© АО «Полаир-Недвижимость» 2022</p>
-                    <ul class="footer__link-list">
-                        <li class="footer__link-item">
-                            <a class="footer__link" href="#">Сделано в <span>CULT</span></a>
-                        </li>
-                        <li class="footer__link-item">
-                            <a class="footer__link" href="#">Политика конфиденциальности</a>
-                        </li>
-                        <li class="footer__link-item">
-                            <a class="footer__link" href="#">Карта сайта</a>
-                        </li>
-                    </ul>
-                </div>
+                <div class="footer__line">
+                    <div class="footer__line-left">
+                        <a class="footer__logo logo" href="#">
+                            <img class="img" src="./assets/images/logo-theme-dark.svg" alt="Логотип компании POLAIR">
+                        </a>
+                    </div>
 
-                <div class="footer__main-right">
-                    <div class="footer__contacts">
+                    <div class="footer__line-right">
                         <div class="footer__contacts-phone">
                             <a class="footer__contacts-phone-link" href="tel:+74959376407">+7 (495) 937-64-07</a>
                             <span class="footer__contacts-phone-paragraph">многоканальный</span>
@@ -840,12 +829,40 @@
                             </li>
                         </ul>
                     </div>
-                    <address class="footer__address">119334, город Москва, Ленинский проспект, дом 37, корпус 1, помещение 2-5, этаж 4</address>
-                    <div class="footer__info">
-                        <p class="footer__info-paragraph">При использовании материалов сайта ссылка обязательна.</p>
-                        <p class="footer__info-paragraph">Данный интернет-сайт носит исключительно информационный характер, и информация, размещённая на нём, не является публичной офертой, определяемой положениями ст. 437 ГК РФ.</p>
+                </div><!-- /.footer__line -->
+
+                <div class="footer__line">
+                    <div class="footer__line-left">
+                        <p class="footer__copyright">© АО «Полаир-Недвижимость» 2022</p>
                     </div>
-                </div>
+
+                    <div class="footer__line-right">
+                        <address class="footer__address">119334, город Москва, Ленинский проспект, дом 37, корпус 1, помещение 2-5, этаж 4</address>
+                    </div>
+                </div><!-- /.footer__line -->
+
+                <div class="footer__line">
+                    <div class="footer__line-left">
+                        <ul class="footer__link-list">
+                            <li class="footer__link-item">
+                                <a class="footer__link" href="#">Сделано в <span>CULT</span></a>
+                            </li>
+                            <li class="footer__link-item">
+                                <a class="footer__link" href="#">Политика конфиденциальности</a>
+                            </li>
+                            <li class="footer__link-item">
+                                <a class="footer__link" href="#">Карта сайта</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__line-right">
+                        <div class="footer__info">
+                            <p class="footer__info-paragraph">При использовании материалов сайта <span><br></span> ссылка обязательна.</p>
+                            <p class="footer__info-paragraph">Данный интернет-сайт носит исключительно информационный характер, и информация, размещённая на нём, не является публичной офертой, определяемой положениями ст. 437 ГК РФ.</p>
+                        </div>
+                    </div>
+                </div><!-- /.footer__line -->
             </div><!-- /.footer__main -->
         </div><!-- /.container -->
 

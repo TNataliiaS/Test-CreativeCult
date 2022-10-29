@@ -28,7 +28,7 @@
         padding-left: 58px;
         padding-right: 58px;
 
-        background-color: #F7F7F8;
+        background-color: $element-color;
         background-image: linear-gradient($content-color-accent, $content-color-accent);
 
         color: $content-color-accent;
@@ -36,7 +36,7 @@
         &:hover {
             color: $primary-color;
 
-            background-color: #F7F7F8;
+            background-color: $element-color;
             background-size: 100% 100%;
         }
 
@@ -58,7 +58,7 @@
         color: $primary-color;
 
         background-color: $content-color-accent;
-        background-image: linear-gradient(#F7F7F8, #F7F7F8);
+        background-image: linear-gradient($element-color, $element-color);
 
         &:hover {
             color: $secondary-color;
@@ -69,7 +69,7 @@
         &:active {
             color: $secondary-color;
 
-            background-color: #F7F7F8;
+            background-color: $element-color;
         }
     }
 

@@ -1,4 +1,7 @@
 .logo {
     width: 200px;
     height: 32px;
+
+    transition: opacity .1s ease;
+    @extend %link-hover-active;
 }

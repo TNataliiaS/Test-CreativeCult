@@ -2,7 +2,7 @@
     @extend %flex-column;
     grid-row: 1;
 
-    background: #F7F7F8;
+    background: $element-color;
 
     @include breakpoint($breakpoint-xs) {
         &:not(:last-of-type) {
