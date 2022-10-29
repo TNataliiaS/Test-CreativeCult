@@ -1,13 +1,13 @@
 .download-catalog {
     height: 510px;
 
-    background-image: url('../images/download-catalog-bg.jpg');
+    background-image: url('../images/no-webp/download-catalog-bg.jpg');
     @extend %background-options;
 
     @include breakpoint($breakpoint-xs) {
         height: 555px;
 
-        background-image: url('../images/download-catalog-bg-mobile.jpg');
+        background-image: url('../images/no-webp/download-catalog-bg-mobile.jpg');
     }
 
     &__inner {
