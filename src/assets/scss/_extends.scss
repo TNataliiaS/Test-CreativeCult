@@ -25,3 +25,13 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+%link-hover-active {
+    &:hover {
+        opacity: .7;
+    }
+
+    &:active {
+        opacity: .5;
+    }
+}

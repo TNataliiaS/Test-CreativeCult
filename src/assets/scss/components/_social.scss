@@ -1,8 +1,21 @@
 .social {
     display: flex;
 
+    @include breakpoint($breakpoint-lg) {
+        margin-left: 7px;
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+
     &__item {
         margin-right: 6px;
+
+        transition: opacity .1s ease;
+        @extend %link-hover-active;
+
+        @include breakpoint($breakpoint-xs) {
+            margin-right: 8px;
+        }
     }
 
     &__icon {

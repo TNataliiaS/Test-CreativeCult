@@ -1,10 +1,19 @@
 .section {
     &--primary {
         padding: 80px 0;
+
+        @include breakpoint($breakpoint-xs) {
+            padding-top: 46px;
+            padding-bottom: 52px;
+        }
     }
 
     &--second {
         padding: 64px 0;
+
+        @include breakpoint($breakpoint-xs) {
+            padding: 52px 0;
+        }
     }
 
     &__suptitle {
@@ -16,6 +25,10 @@
         letter-spacing: 0.08em;
         text-transform: uppercase;
         color: #888888;
+
+        @include breakpoint($breakpoint-xs) {
+            font-size: 12px;
+        }
     }
 
     &__title {
@@ -25,5 +38,9 @@
         line-height: 1.16;
         font-weight: 600;
         color: $content-color-accent;
+
+        @include breakpoint($breakpoint-xs) {
+            font-size: 27px;
+        }
     }
 }

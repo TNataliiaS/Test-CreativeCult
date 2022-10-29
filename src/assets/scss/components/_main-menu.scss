@@ -1,17 +1,43 @@
 .main-menu {
     display: flex;
 
+    @include breakpoint($breakpoint-md) {
+        flex-direction: column;
+    }
+
     &__header {
         margin-right: 118px;
+
+        @include breakpoint($breakpoint-lg) {
+            margin-right: 50px;
+        }
+
+        @include breakpoint($breakpoint-md) {
+            margin-bottom: 36px;
+        }
     }
 
     &__title {
         margin-bottom: 22px;
+
+        @include breakpoint($breakpoint-xs) {
+            margin-bottom: 10px;
+        }
     }
 
     &__nav {
         display: flex;
         margin-bottom: 1px;
+
+        @include breakpoint($breakpoint-xxl) {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: -50px;
+        }
+
+        @include breakpoint($breakpoint-sm-additional) {
+            margin-bottom: -2px;
+        }
     }
 
     &__list {
@@ -20,17 +46,51 @@
         padding-left: 16px;
 
         border-left: 1px solid rgba(225, 225, 225, 1);
+
+        @include breakpoint($breakpoint-xxl) {
+            margin-bottom: 50px;
+        }
+
+        @include breakpoint($breakpoint-md) {
+            width: 45%;
+            margin-right: 0;
+        }
+
+        @include breakpoint($breakpoint-sm-additional) {
+            width: 100%;
+            margin-bottom: 33px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
 
     &__item {
         &:not(:last-child) {
             margin-bottom: 18px;
+
+            @include breakpoint($breakpoint-xs) {
+                margin-bottom: 14px;
+            }
         }
     }
 
     &__link {
+        padding: 7px 0;
+
         font-size: 17px;
         line-height: 1.58;
         color: $content-color-second;
+
+        transition: opacity .2s linear;
+
+        @extend %link-hover-active;
+
+        @include breakpoint($breakpoint-xs) {
+            br {
+                display: none;
+            }
+        }
     }
 }

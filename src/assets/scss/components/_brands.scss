@@ -1,20 +1,45 @@
 .brands {
-    padding-bottom: 22px;
+    padding-bottom: 21px;
+
+    @include breakpoint($breakpoint-xs) {
+        padding-bottom: 42px;
+    }
 
     &__title {
         margin-bottom: 40px;
+
+        @include breakpoint($breakpoint-xs) {
+            display: none;
+        }
     }
 
     &__list {
         display: flex;
         flex-wrap: wrap;
         margin: 0 -12px;
+
+        @include breakpoint($breakpoint-xs) {
+            margin-top: -7px;
+            padding-bottom: 18px;
+        }
     }
 
     &__item {
         flex: 0 0 25%;
         padding: 0 12px;
         margin-bottom: 32px;
+
+        @include breakpoint($breakpoint-lg-additional) {
+            flex-basis: 33.33333%;
+        }
+
+        @include breakpoint($breakpoint-md) {
+            flex-basis: 50%;
+        }
+
+        @include breakpoint($breakpoint-xs) {
+            flex-basis: 100%;
+        }
     }
 
     &__link {
@@ -23,6 +48,17 @@
         padding-left: 16px;
 
         border-left: 1px solid #E1E1E1;
+
+        &:hover,
+        &:active {
+            .brands__description {
+                color: #404040;
+            }
+
+            .brands__icon {
+                fill: $content-color-accent;
+            }
+        }
     }
 
     &__icon {
@@ -30,10 +66,23 @@
         height: 48px;
 
         fill: #8F9090;
+
+        transition: fill .2s ease;
+
+        @include breakpoint($breakpoint-xs) {
+            margin-bottom: 2px;
+        }
     }
 
     &__description {
         font-size: 14px;
         line-height: 1.58;
+        color: #888888;
+
+        transition: color .2s ease;
+
+        @include breakpoint($breakpoint-xs) {
+            font-size: 13px;
+        }
     }
 }
